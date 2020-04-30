@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/solid"
+            android:elevation="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                style="@style/TextAppearance.AppCompat"
+                android:text="friday"
+                android:textColor="#000"
+                android:id="@+id/dayname"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageweather"
+                android:src="@drawable/sunny"
+                android:rotation="@android:integer/config_longAnimTime"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle=""
+                android:gravity="right"
+                style="@style/TextAppearance.AppCompat"
+                android:text="22°/27° C"
+                android:textColor="#000"
+                android:id="@+id/degree"
+                />
+        </LinearLayout>

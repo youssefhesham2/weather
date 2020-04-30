@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Ui.MainActivity">
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="4dp"
+        app:shape_arc_cropDirection="outside"
+        app:shape_arc_height="20dp"
+        app:shape_arc_position="bottom"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageeviningormorning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="#999DFF"
+            tools:ignore="Suspicious0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+            <TextView
+                android:id="@+id/degre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 C"
+                android:textSize="50sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp" />
+            <TextView
+                android:id="@+id/cityname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="cairo,egypt"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:maxLines="1"
+                android:gravity="center|left"
+                android:layout_marginRight="16dp"
+                />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/weatherstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clier"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:layout_marginVertical="15dp"
+            android:layout_marginRight="20dp"
+            android:rotation="@android:integer/config_longAnimTime"
+            android:src="@drawable/sunny"
+            android:id="@+id/sunormoon"
+            />
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler"/>
+</LinearLayout>
